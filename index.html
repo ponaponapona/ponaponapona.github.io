@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>破那</title>
     <style>
-      body { max-width: 512px; margin: 0 auto; padding: 0 4%; }
+      body { max-width: 512px; margin: 0 auto; padding: 0 4%; background: white; color: black; }
       li { list-style: circle; }
       a { text-decoration: none; }
       a:hover { text-decoration: underline; }
       * {
         font-family: serif;
       }
+      @media (prefers-color-scheme: dark) {
+         body {
+             background: black;
+             color: white;
+         }
+     }      
     </style>
   </head>
   <body>
