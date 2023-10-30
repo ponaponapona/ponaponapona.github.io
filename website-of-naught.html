@@ -24,7 +24,7 @@
     </style>
   </head>
   <body>
-    <h1 id="title">烏有網記</h1>
+    <h1>烏有網記</h1>
 
     <pre>
 　　晉太平中，冷川人，編碼為業。緣網衝浪，忘界之內外。忽見一論壇，日帖數千，中無戾氣，行文流水，字字珠璣，碼人甚異之。復縱覽，欲窮其文。
@@ -37,5 +37,14 @@
       
 　　南陽劉子驥，高尚士也，聞之，欣然規訪，事發，即入獄。後遂無問津者。
     </pre>
+    <script>
+      // chrome can't handle `writingMode = vertical-rc`
+      // it won't show the page from the beginning
+      if(window.chrome) {
+        document.body.style.writingMode = 'unset';
+        document.body.style.margin = '0 auto';
+        document.body.style.maxHeight = 'unset';
+      }
+     </script>
   </body>
 </html>
