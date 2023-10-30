@@ -40,10 +40,10 @@
     <script>
       // chrome can't handle `writingMode = vertical-rc`
       // it won't show the page from the beginning
-      if(window.chrome) {
-        document.body.style.writingMode = 'unset';
-        document.body.style.margin = '0 auto';
-        document.body.style.maxHeight = 'unset';
+      if(window.chrome && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent)) {
+       document.body.style.writingMode = 'unset';
+       document.body.style.margin = '0 auto';
+       document.body.style.maxHeight = 'unset';
       }
      </script>
   </body>
