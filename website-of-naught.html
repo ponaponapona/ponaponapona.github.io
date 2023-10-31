@@ -23,6 +23,11 @@
           width: 1703px;
           height: 512px;
       }
+      @media (max-width: 1024px) {
+          html { writing-mode: unset; }
+          .bg { display: none; }
+          body { margin: 0 auto; max-height: unset; max-width: 512px; padding: 0 4%; }
+      }
       @media (prefers-color-scheme: dark) {
          body {
              background: black;
@@ -49,16 +54,6 @@
 　　南陽劉子驥，高尚士也，聞之，欣然規訪，事發，即入獄。後遂無問津者。
     </pre>
     <div class="bg"></div>
-    <script>
-      // chrome can't handle `writingMode = vertical-rc`
-      // it won't show the page from the beginning
-      if(window.chrome && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent)) {
-       document.getElementsByTagName('html')[0].style.writingMode = 'unset';
-       document.getElementsByClassName('bg')[0].style.display = 'none';
-       document.body.style.margin = '0 auto';
-       document.body.style.maxHeight = 'unset';
-      }
-     </script>
      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "de47eca6536b4c8c959778b3ce72fad5"}'></script><!-- End Cloudflare Web Analytics -->
   </body>
 </html>
