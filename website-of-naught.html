@@ -54,6 +54,7 @@
       // it won't show the page from the beginning
       if(window.chrome && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent)) {
        document.getElementsByTagName('html')[0].style.writingMode = 'unset';
+       document.getElementsByClassName('bg')[0].style.display = 'none';
        document.body.style.margin = '0 auto';
        document.body.style.maxHeight = 'unset';
       }
