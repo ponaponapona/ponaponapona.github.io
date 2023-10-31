@@ -16,10 +16,20 @@
       * {
         font-family: serif;
       }
+      .bg {
+          background-image: url('bg.png'); /* 趙孟頫 */
+          box-shadow: 0 0 2px 2px antiquewhite inset;
+          border-radius: 8px;
+          width: 1703px;
+          height: 512px;
+      }
       @media (prefers-color-scheme: dark) {
          body {
              background: black;
              color: antiquewhite;
+         }
+         .bg {
+             box-shadow: 0 0 2px 2px black inset;
          }
      }
     </style>
@@ -38,6 +48,7 @@
       
 　　南陽劉子驥，高尚士也，聞之，欣然規訪，事發，即入獄。後遂無問津者。
     </pre>
+    <div class="bg"></div>
     <script>
       // chrome can't handle `writingMode = vertical-rc`
       // it won't show the page from the beginning
